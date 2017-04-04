@@ -7,7 +7,7 @@ Tugas Besar OOP (Java)
 
 # Minimum Specification:
 
-- Mengelola data Gerbong
+- Mengelola Data Penumpang
 - Mengelola Data Kereta
 - Mengelola Data Stasiun
 - Mengelola Data Rute
@@ -15,14 +15,11 @@ Tugas Besar OOP (Java)
 
 # Task 1
 
-- Gerbong full attribute encapsulate
+- Orang full attribute encapsulate
 
-- Stasiun full attribute encapsulate
+- Penumpang full attribute encapsulate
 
-- Kereta full attribute encapsulate
- - Add Gerbong
- - Get Gerbong by index
- - Remove Gerbong
+- Petugas full attribute encapsulate
 
 - Rute full attribute encapsulate
  - Set Stasiun 1
