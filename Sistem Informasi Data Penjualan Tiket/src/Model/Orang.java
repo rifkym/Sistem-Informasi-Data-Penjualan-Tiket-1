@@ -9,7 +9,7 @@ package Model;
  *
  * Herica Bunga M (1301154572)
  */
-public class Orang {
+public abstract class Orang {
     private String nama;
     private String alamat;
 
