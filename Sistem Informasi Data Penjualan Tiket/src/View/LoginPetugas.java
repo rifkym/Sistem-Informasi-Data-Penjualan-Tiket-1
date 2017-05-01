@@ -5,14 +5,21 @@
  */
 package View;
 
+import java.awt.Component;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
 /**
  *
- * @author USER
+ * @author rifky
  */
 public class LoginPetugas extends javax.swing.JFrame {
 
     /**
-     * Creates new form LoginPetugas
+     * Creates new form Login
      */
     public LoginPetugas() {
         initComponents();
@@ -27,57 +34,131 @@ public class LoginPetugas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        txUsername = new javax.swing.JTextField();
+        LabelUsername = new javax.swing.JLabel();
+        txPass = new javax.swing.JTextField();
+        LabelPass = new javax.swing.JLabel();
+        btnLogin = new javax.swing.JButton();
+        hlmAdmin = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        txUsername.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txUsernameActionPerformed(evt);
+            }
+        });
+
+        LabelUsername.setText("Username");
+
+        txPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txPassActionPerformed(evt);
+            }
+        });
+
+        LabelPass.setText("Password");
+
+        btnLogin.setText("Login");
+
+        hlmAdmin.setText("PETUGAS");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(LabelUsername)
+                            .addComponent(LabelPass))
+                        .addGap(27, 27, 27)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
+                            .addComponent(txPass))))
+                .addContainerGap(75, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(157, Short.MAX_VALUE)
+                .addComponent(hlmAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(hlmAdmin)
+                .addGap(42, 42, 42)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelUsername))
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelPass))
+                .addGap(31, 31, 31)
+                .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LoginPetugas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LoginPetugas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LoginPetugas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LoginPetugas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void txUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txUsernameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txUsernameActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new LoginPetugas().setVisible(true);
-            }
-        });
+    private void txPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txPassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txPassActionPerformed
+
+    public JButton getBtnLogin() {
+        return btnLogin;
     }
+    
+    public void setUsername(String username) {
+        txUsername.setText(username);
+    }
+    
+    public String getUsername() {
+        return txUsername.getText();
+    }
+    
+    public void setPassword(String password) {
+        txPass.setText(password);
+    }
+    
+    public String getPassword() {
+        return txPass.getText();
+    }
+    
+    public JTextField getTxUsername() {
+        return txUsername;
+    }
+    
+    public JPasswordField getTxPassword() {
+        return (JPasswordField) txPass;
+    }
+    
+    public void showMessage(Component c, String s) {
+        JOptionPane.showMessageDialog(c, s);
+    }
+    
+    public void addListener(ActionListener e) {
+        txUsername.addActionListener(e);
+        txPass.addActionListener(e);
+        btnLogin.addActionListener(e);
+    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LabelPass;
+    private javax.swing.JLabel LabelUsername;
+    private javax.swing.JButton btnLogin;
+    private javax.swing.JLabel hlmAdmin;
+    private javax.swing.JTextField txPass;
+    private javax.swing.JTextField txUsername;
     // End of variables declaration//GEN-END:variables
 }
